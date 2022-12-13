@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url("../CSS/AddDog.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.container-fluid{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    background-image: url("../CSS/AddDog.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    }
+.container ul li a{
+    text-decoration: none;
+    color:#fff;
+}
+
+.container{
+    display: flex;
+    border: 2px solid black;
+    width: 80%;
+    height: 10vh;
+    padding-right: 2vw;
+    margin-left: 10vw;
+    position: absolute;
+    background:#F3D48A;
+    justify-content: space-between;
+    align-items: center;
+}
+.container ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container ul li{
+    font-size: 1.5vw;
+    font-family: arial;
+    color:#fff;
+    list-style: none;
+    margin-right: 50px;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+.container h2{
+    font-family: arial;
+    font-size: 3vh;
+    color: #fff;
+}
+
+
+.container ul li a:hover{
+    color: #30d300;
+}
+
+.content{
+
+    width: auto;
+    height: auto;
+    position: absolute;
+    margin-left: 10vw;
+    margin-top: 5vw;
+    align-items: center;
+    justify-content: center;
+    width:69%;
+    height: 80vh;
+    display: flex;
+
+}
+
+.email{
+    margin-top: 12vh;
+    width: 60vw;
+    height: 80vh;
+    background: aliceblue;
+    display: flex;
+}
+textarea{
+    resize: none;
+}
+.contentEmail{
+    margin: auto;
+}
+button{
+    background-color: #419727;
+    width: auto;
+}

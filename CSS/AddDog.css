@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container-fluid{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    background-image: url("../CSS/AddDog.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    }
+.container ul li a{
+    text-decoration: none;
+    color:#fff;
+}
+
+.container{
+    display: flex;
+    border: 2px solid black;
+    width: 80%;
+    height: 5vw;
+    padding-right: 2vw;
+    margin-left: 10vw;
+    position: absolute;
+    background:#F3D48A;
+    justify-content: space-between;
+    align-items: center;
+}
+.container ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container ul li{
+    font-size: 1.5vw;
+    font-family: arial;
+    color:#fff;
+    list-style: none;
+    margin-right: 50px;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+.container h2{
+    font-family: arial;
+    font-size: 3vh;
+    color: #fff;
+}
+
+
+.container ul li:hover{
+    color: #30d300;
+}
+
+.content{
+
+    background-color: rgba(238, 219, 157, 0.397);
+    box-shadow: 0 30px 60px rgba(0,0,0,0.5);
+    width: auto;
+    height: auto;
+    position: absolute;
+    margin-left: 10vw;
+    margin-top: 5vw;
+    align-items: center;
+    justify-content: center;
+    width:69%;
+    height: 80vh;
+    display: flex;
+
+}
+
+label {
+    display: inline-block;
+    text-align: right;
+  }
+.Nume input{
+    width: 20vw;
+}
+form label{
+    font-size: 1vw;
+}
+.AddAnimal{
+    margin-left:auto;
+}
+
+.content form{
+    padding: 2%;
+    height: auto;
+    width: 50%;
+    background-color: rgba(231, 216, 164, 0.534);
+    box-shadow: 0 30px 60px rgba(0,0,0,0.5);
+
+}
+textarea{
+    resize: none;
+}

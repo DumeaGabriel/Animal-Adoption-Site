@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+body{
+    background-image: url("../CSS/AddDog.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.container-fluid{
+    width: 99vw;
+    height: auto;
+    display: flex;
+    background-image: url("../CSS/AddDog.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    }
+.container ul li a{
+    text-decoration: none;
+    color:#fff;
+}
+
+.container{
+    display: flex;
+    border: 2px solid black;
+    width: 80%;
+    height: 5vw;
+    padding-right: 2vw;
+    margin-left: 10vw;
+    position: absolute;
+    background:#F3D48A;
+    justify-content: space-between;
+    align-items: center;
+}
+.container ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container ul li{
+    font-size: 1.5vw;
+    font-family: arial;
+    color:#fff;
+    list-style: none;
+    margin-right: 50px;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+.container h2{
+    font-family: arial;
+    font-size: 3vh;
+    color: #fff;
+}
+
+
+.container ul li a:hover{
+    color: #30d300;
+}
+
+.content{
+
+    width: auto;
+    height: auto;
+    position: absolute;
+    margin-left: 10vw;
+    margin-top: 5vw;
+    align-items: center;
+    justify-content: center;
+    width:69%;
+    height: 80vh;
+    display: flex;
+
+}
+.content table{
+    margin-top: auto;
+}
+.afisareCaine{
+    background-color: rgba(235, 222, 180, 0.966);
+    box-shadow: 0 30px 60px rgba(0,0,0,0.5);
+    display: flex;
+    padding: 1vw;
+    width: 50vw;
+    height: 10vw;
+    position: relative;
+    margin-bottom:2vw ;
+}
+
+.afisareCaine:hover{
+    background-color: rgba(235, 222, 180, 0.966);
+    box-shadow: 0 30px 60px rgba(0,0,0,0.5);
+    display: flex;
+    padding: 1vw;
+    width: 50vw;
+    height: 10vw;
+    transform: scale(.95);
+    position: relative;
+}
+
+.afisareCaine .imagine{
+    display: flex;
+    margin-right: 5vw;
+}
+.imagine img{
+    object-fit: cover;    
+}
+.date{
+    display: flex;
+    margin: auto;
+}
+.date table{
+    width: 50%;
+}
+.date table td{
+    width: 50%;
+    font-size: 2vw;
+}
+th, td{
+    padding-left: 2vw;
+}
+ td a{
+    text-decoration: none;
+ }
+
