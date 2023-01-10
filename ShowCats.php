@@ -5,9 +5,9 @@
     include("./php/verifyLogIn.php");
     ?>
     <head>
-        <title >Catei</title>
+        <title >Pisici</title>
         <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
-        <link rel="stylesheet" type="text/css" href="./CSS/showDogs.css">
+        <link rel="stylesheet" type="text/css" href="./CSS/ShowCats.css">
     </head>
 
     <body>
@@ -29,16 +29,16 @@
             </ul>
             </div>
         <div class="content">
-        <a href="./roCaine.php"><button class="btn btn-primary mapa">Cauta dupa zona</button></a>
+        <a href="./roPisica.php"><button class="btn btn-primary mapa">Cauta dupa zona</button></a>
         <?php
         $conn=new mysqli('localhost','root','','proiect pi');
         $db=mysqli_select_db($conn,'proiect pi');
 
         $filtru=$_SESSION["filtru"];
-        $querry="select * from dogs where adoptat=0".$filtru;
+
+        $querry="select * from cat where adoptat=0".$filtru;
         $result=mysqli_query($conn,$querry);
         echo "<table>";
-        
         while($row=mysqli_fetch_array($result)){
             $nume=$row['nume'];
             $varsta=$row['varsta'];
@@ -46,7 +46,7 @@
             $img=$row['poza'];
             $dogid=$row['id'];
             echo "<tr><td>
-            <a href='DogInfo.php?idDog=$dogid'><div class='afisareCaine' id=/''$dogid'/'>
+            <a href='CatInfo.php?idDog=$dogid'><div class='afisareCaine' id=/''$dogid'/'>
             <div class='imagine'><img src='./imagini/$img'></div>
             <div class='date'>
                 <table>
@@ -69,18 +69,15 @@
         </td></tr>
         ";
         }
-        echo "</table>";
-        $_SESSION["filtru"]="";
-        ?>
+        echo "</table>";?>
             <div class="filtru">
-            <form action="./php/filtru.php" method="post">
+            <form action="./php/filtruCats.php" method="post">
             <table>
                     <tr><td>Talie:</td><td>
-            <select name="talie" class="talie">
+            <select name="rasa" class="rasa">
                 <option value="">Any</option>
-                <option value="mic">Mica</option>
-                <option value="medie">Medie</option>
-                <option value="mare">Mare</option>
+                <option value="1">De Rasa</option>
+                <option value="0">corcitura</option>
             </select></td></tr>
             <tr><td>Varsta:</td><td>
             <input type="number" name="varsta" class="varsta" value="" placeholder="varsta">
@@ -99,8 +96,6 @@
                 <button type="reset">Reset</button>
                 </td></tr>
         </form>
-        </div>
-        
         </div>
 
         </div>

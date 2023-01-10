@@ -20,6 +20,8 @@ if($pass==$row['password']){
 $_SESSION['username']=$nume;
 $_SESSION['admin']=$row['admin'];
 $_SESSION['id']=$row['id'];
+$_SESSION['filtru']="";
+$_SESSION['filtruC']="";
 header('location:../homepage.php');}
 else
 {

@@ -1,16 +1,17 @@
 *{
     margin: 0;
     padding: 0;
+    
 }
 body{
-    background-image: url("../CSS/FundalMail.jpg");
+    background-image: url("../CSS/fundalShowDogs.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
 .container-fluid{
-    width: 100vw;
-    height: 100vh;
+    width: 99vw;
+    height: auto;
     display: flex;
     background-size: cover;
     background-repeat: no-repeat;
@@ -25,7 +26,7 @@ body{
     display: flex;
     border: 2px solid black;
     width: 80%;
-    height: 10vh;
+    height: 5vw;
     padding-right: 2vw;
     margin-left: 10vw;
     position: absolute;
@@ -62,11 +63,8 @@ body{
 .container ul li:hover{
     color: #30d300;
 }
-.container ul li:hover{
-    color: #30d300;
-}
-
 .content{
+
 
     width: auto;
     height: auto;
@@ -80,21 +78,53 @@ body{
     display: flex;
 
 }
-
-.email{
-    margin-top: 12vh;
-    width: 60vw;
-    height: 80vh;
-    background: rgba(240, 248, 255, 0.829);
+.content table{
+    margin-top: auto;
+}
+.afisareCaine{
+    background-color: rgba(235, 222, 180, 0.966);
+    box-shadow: 0 30px 60px rgba(0,0,0,0.5);
     display: flex;
+    padding: 1vw;
+    width: 50vw;
+    height: 10vw;
+    position: relative;
+    margin-bottom:2vw ;
 }
-textarea{
-    resize: none;
+
+.afisareCaine:hover{
+    background-color: rgba(235, 222, 180, 0.966);
+    box-shadow: 0 30px 60px rgba(0,0,0,0.5);
+    display: flex;
+    padding: 1vw;
+    width: 50vw;
+    height: 10vw;
+    transform: scale(.95);
+    position: relative;
 }
-.contentEmail{
+
+.afisareCaine .imagine{
+    display: flex;
+    margin-right: 5vw;
+}
+.imagine img{
+    object-fit: cover;    
+}
+.date{
+    display: flex;
     margin: auto;
 }
-button{
-    background-color: #419727;
-    width: auto;
+.date table{
+    width: 50%;
 }
+.date table td{
+    width: 50%;
+    font-size: 2vw;
+}
+th, td{
+    padding-left: 2vw;
+}
+ td a{
+    text-decoration: none;
+ }
+

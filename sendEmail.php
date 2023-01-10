@@ -17,7 +17,7 @@
             <ul>
                 <li ><a href='./homepage.php'><ion-icon name="home-outline"></ion-icon> HOME</a></li>
                 <li ><a href="./ShowDogs.php"><ion-icon name="paw-outline"></ion-icon> Catei</a></li>
-                <li ><ion-icon name="logo-octocat"></ion-icon> Pisici</li>
+                <li ><a href="./ShowCats.php"><ion-icon name="logo-octocat"></ion-icon> Pisici</a></li>
                 <?php
                  if($_SESSION['admin']!=0){
                     echo "<li><a href='./AddAnimal.php'>Add Animal </a></li>";
@@ -31,7 +31,6 @@
         <?php
         $conn=new mysqli('localhost','root','','proiect pi');
         $db=mysqli_select_db($conn,'proiect pi');
-        $_SESSION['owner']='8';
         $idOwner=$_SESSION['owner'];
         unset($_SESSION['owner']);
         $querry="select * from users where id='$idOwner'";
@@ -57,6 +56,7 @@
 
         </div>
         
+    </div>
         <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     </body>

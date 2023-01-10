@@ -2,19 +2,14 @@
     margin: 0;
     padding: 0;
 }
-body{
-    background-image: url("../CSS/FundalMail.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
 .container-fluid{
     width: 100vw;
     height: 100vh;
     display: flex;
+    background-image: url("../CSS/addCat.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    
     }
 .container ul li a{
     text-decoration: none;
@@ -25,7 +20,7 @@ body{
     display: flex;
     border: 2px solid black;
     width: 80%;
-    height: 10vh;
+    height: 5vw;
     padding-right: 2vw;
     margin-left: 10vw;
     position: absolute;
@@ -56,18 +51,14 @@ body{
 }
 
 
-.container ul li a:hover{
-    color: #30d300;
-}
-.container ul li:hover{
-    color: #30d300;
-}
 .container ul li:hover{
     color: #30d300;
 }
 
 .content{
 
+    background-color: rgba(238, 219, 157, 0.397);
+    box-shadow: 0 30px 60px rgba(0,0,0,0.5);
     width: auto;
     height: auto;
     position: absolute;
@@ -81,20 +72,28 @@ body{
 
 }
 
-.email{
-    margin-top: 12vh;
-    width: 60vw;
-    height: 80vh;
-    background: rgba(240, 248, 255, 0.829);
-    display: flex;
+label {
+    display: inline-block;
+    text-align: right;
+  }
+.Nume input{
+    width: 20vw;
+}
+form label{
+    font-size: 1vw;
+}
+.AddAnimal{
+    margin-left:auto;
+}
+
+.content form{
+    padding: 2%;
+    height: auto;
+    width: 50%;
+    background-color: rgba(231, 216, 164, 0.534);
+    box-shadow: 0 30px 60px rgba(0,0,0,0.5);
+
 }
 textarea{
     resize: none;
-}
-.contentEmail{
-    margin: auto;
-}
-button{
-    background-color: #419727;
-    width: auto;
 }

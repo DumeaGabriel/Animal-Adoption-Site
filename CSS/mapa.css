@@ -1,14 +1,24 @@
-*{
-    margin: 0;
+ *{
+    margin:0;
     padding: 0;
-}
-body{
-    background-image: url("../CSS/fundalDogInfo.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
-.container ul li:hover{
+ }
+
+ body{
+    background-color: #01171b;
+ }
+
+ svg path{
+fill:#00394f;
+stroke:#eee;
+stroke-width: .25;
+ }
+
+ svg path:hover{
+    fill:#006284;
+    transition: 0.6s;
+    cursor: pointer;
+ }
+ .container ul li:hover{
     color: #30d300;
 }
 .container-fluid{
@@ -177,3 +187,15 @@ tr,td{
     right:70%;
 
     }
+
+.mapa{
+    display: flex;
+    margin-top:150px;
+    margin-left: 20vw;
+    width: 80vw;
+    height: 80vh;
+}
+.M{
+    display: flex;
+    position: absolute;
+}

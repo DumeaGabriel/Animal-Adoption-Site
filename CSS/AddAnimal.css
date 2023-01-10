@@ -72,6 +72,9 @@ background-repeat: no-repeat;
     display: flex;
 
 }
+.container ul li:hover{
+    color: #30d300;
+}
 .caine {
     background: url("../CSS/dogButton.jpg");
     background-size:cover ;

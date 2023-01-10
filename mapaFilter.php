@@ -29,12 +29,14 @@
             </ul>
             </div>
         <div class="content">
-        <a href="./roCaine.php"><button class="btn btn-primary mapa">Cauta dupa zona</button></a>
         <?php
         $conn=new mysqli('localhost','root','','proiect pi');
         $db=mysqli_select_db($conn,'proiect pi');
 
         $filtru=$_SESSION["filtru"];
+        if($_GET['jud']){
+            $filtru.=$_GET['jud'];
+        }
         $querry="select * from dogs where adoptat=0".$filtru;
         $result=mysqli_query($conn,$querry);
         echo "<table>";
@@ -70,8 +72,7 @@
         ";
         }
         echo "</table>";
-        $_SESSION["filtru"]="";
-        ?>
+        $_SESSION["filtru"]="";?>
             <div class="filtru">
             <form action="./php/filtru.php" method="post">
             <table>
@@ -99,8 +100,6 @@
                 <button type="reset">Reset</button>
                 </td></tr>
         </form>
-        </div>
-        
         </div>
 
         </div>
